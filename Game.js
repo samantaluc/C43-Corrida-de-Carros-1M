@@ -173,7 +173,8 @@ handleResetButton() {
 showLeaderboard() { //c43
   var leader1, leader2; //líderes do primeiro e segundo lugar
   var players = Object.values(allPlayers); //jogadores vai obter o valor de todos os jogadores
-  if((players[0].rank === 0 && players[1].rank === 0) || players[0].rank === 1) { //se o primeiro player e o segundo tiverem iniciado ou o primeiro tenha sido o vencedor
+  if((players[0].rank === 0 && players[1].rank === 0) || players[0].rank === 1) { 
+    //se o primeiro player e o segundo tiverem iniciado ou o primeiro tenha sido o vencedor
     leader1 = //o primeiro lugar será do primeiro jogador
       players[0].rank +      "&emsp;" +      players[0].name +      "&emsp;" +      players[0].score;
 
